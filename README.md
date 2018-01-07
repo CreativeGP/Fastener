@@ -1,15 +1,12 @@
-![top-page](https://raw.githubusercontent.com/creativegp/Fastener/images/logo.png)
-
-Overview
+# ![](https://github.com/CreativeGP/Fastener/blob/images/fastener-logo.png "Fastener")
 
 A simple hackable task automizer.
 
-
 ## Description
+CGP Fastener is a simple task automizer. You can watch event and run your task automatically.
 
-## Demo
-
-## VS. 
+The supported events are as follows now:
+- File changing, creation, deleting.
 
 ## Requirement
 - Python2.x
@@ -19,15 +16,18 @@ A simple hackable task automizer.
 
 ## Usage
 `python fastener.py basedir mode [--recursive] [--silent]`
+
 `basedir` is a directory path where you want to watch.
+
 `mode` is name you configured your tasks.
+
 `--recursive` `-r`: Watch recursively.
+
 `--silent` `-s`: Do not show the results of your tasks.
+
 
 ## Install
 Just clone this repogitory.
-
-## Contribution
 
 ## Licence
 
