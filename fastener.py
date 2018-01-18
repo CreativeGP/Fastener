@@ -49,7 +49,7 @@ def work(path):
     for regex in configure.keys():
         if re.match(regex, os.path.basename(abp)):
             for task in configure[regex]:
-                print(decode_task(task, abp))
+                print("\n" + color.Color.BOLD + ">" + decode_task(task, abp) + color.Color.END)
                 print(commands.getoutput(decode_task(task, abp)))
 
 class ChangeHandler(FileSystemEventHandler):
