@@ -45,7 +45,6 @@ def decode_task(task, path):
     return task
 
 def work(path):
-    _, ext = os.path.splitext(path)
     for regex in configure.keys():
         if re.match(regex, path):
             for task in configure[regex]:

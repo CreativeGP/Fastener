@@ -8,4 +8,9 @@ bacon = {
     "sass": {
         ".*\.sass": [ "sass #f:#p#n.css" ]
     },
+    "web": {
+        ".*\.scss": [ "sass #f:#p#n.css" ],
+        ".*\.sass": [ "sass #f:#p#n.css" ],
+        "[^_#].*\.pug": [ "pug #f" ],
+    },
 }
