@@ -45,11 +45,12 @@ def decode_task(task, path):
     return task
 
 def work(path):
+    abp = os.path.abspath(path)
     for regex in configure.keys():
-        if re.match(regex, path):
+        if re.match(regex, os.path.basename(abp)):
             for task in configure[regex]:
-                print(decode_task(task, path))
-                print(commands.getoutput(decode_task(task, path)))
+                print(decode_task(task, abp))
+                print(commands.getoutput(decode_task(task, abp)))
 
 class ChangeHandler(FileSystemEventHandler):
 

@@ -11,6 +11,6 @@ bacon = {
     "web": {
         ".*\.scss": [ "sass #f:#p#n.css" ],
         ".*\.sass": [ "sass #f:#p#n.css" ],
-        "[^_#].*\.pug": [ "pug #f" ],
+        "[^_#\.].*\.pug": [ "pug #f" ],
     },
 }
